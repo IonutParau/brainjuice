@@ -1,0 +1,11 @@
+# Files and directories created by pub.
+.dart_tool/
+.packages
+
+# Conventional directory for build output.
+build/
+
+# Stuff we don't want to waste disk space on.
+.DS_Store
+.packages
+pubspec.lock
