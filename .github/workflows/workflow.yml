@@ -8,7 +8,7 @@ jobs:
       - uses: DanTup/gh-actions/setup-dart@master
       - run: mkdir build
       - run: dart pub get
-      - run: dart compile exe bin/main.dart -v -o "build/BrainJuice.exe"
+      - run: dart compile exe bin/brainjuice.dart -v -o "build/BrainJuice.exe"
       - uses: actions/upload-artifact@v1
         with:
           name: Windows
@@ -20,7 +20,7 @@ jobs:
       - uses: DanTup/gh-actions/setup-dart@master
       - run: mkdir build
       - run: dart pub get
-      - run: dart compile exe bin/main.dart -v -o "build/BrainJuice"
+      - run: dart compile exe bin/brainjuice.dart -v -o "build/BrainJuice"
       - uses: actions/upload-artifact@v1
         with:
           name: Linux
@@ -32,7 +32,7 @@ jobs:
       - uses: DanTup/gh-actions/setup-dart@master
       - run: mkdir build
       - run: dart pub get
-      - run: dart compile exe bin/main.dart -v -o "build/BrainJuice"
+      - run: dart compile exe bin/brainjuice.dart -v -o "build/BrainJuice"
       - uses: actions/upload-artifact@v1
         with:
           name: MacOS
